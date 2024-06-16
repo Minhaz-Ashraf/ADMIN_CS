@@ -315,7 +315,7 @@ function App()
   };
   return (
     <>
-      <ToastContainer position="top-center" autoClose={2000} hideProgressBar />
+      <ToastContainer position="top-center" autoClose={1000} hideProgressBar />
       <div className="overflow-hidden">
         <Routes>
           <Route path="/" element={<Home />} />
