@@ -231,7 +231,8 @@ const Form1 = ({ page }) => {
     dateOfBirth: "",
     timeOfBirth: "",
     placeOfBirthCountry: "",
-
+    placeOfBirthState: "",
+    placeOfBirthCity: "",
     manglik: "",
     horoscope: "",
   });
@@ -274,6 +275,18 @@ const Form1 = ({ page }) => {
     }
     if (!formone.timeOfBirth) {
       errors.timeOfBirth = "Time of birth is required";
+      hasErrors = true;
+    }
+    if (!formone.placeOfBirthCountry) {
+      errors.placeOfBirthCountry = "Country name is required";
+      hasErrors = true;
+    }
+    if (!formone.placeOfBirthState) {
+      errors.placeOfBirthState = "State name is required";
+      hasErrors = true;
+    }
+    if (!formone.placeOfBirthCity) {
+      errors.placeOfBirthCity = "City name is required";
       hasErrors = true;
     }
     if (!formone.manglik) {
