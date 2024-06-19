@@ -158,7 +158,7 @@ const Form4 = ({ page }) => {
       }
     }  else if (type === "number") {
       // Allow only fifteen-digit numbers
-      const regex = /^(0|[1-9]\d{0,14})$/;
+      const regex = /^(|0|[0-9]{1,15})$/;// 0 or numbers with up to 15 digits
       if (!regex.test(value)) {
         isValid = false;
       }
